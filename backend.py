@@ -602,4 +602,5 @@ def health_check():
     return jsonify({'status': 'healthy', 'timestamp': datetime.now().isoformat()})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+
+    app.run(host="0.0.0.0", port=port, debug=True)
